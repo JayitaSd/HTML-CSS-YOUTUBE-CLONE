@@ -1,0 +1,165 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:rgb(192, 192, 192);
+}
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.menu{
+  height: 24px;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.logo{
+  height: 23px;
+}
+.middle-section{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 175px;
+  margin-right: 155px;
+  max-width: 550px;
+}
+.search-bar{
+  flex: 1;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(192,192,192);
+  box-shadow: inset 1px 2px 3px rgba(0, 0 ,0 , 0.05);
+  width: 0;
+}
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 14px;
+}
+.button1{
+  height: 28px;
+  width: 36px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+  position: relative;
+}
+.button1 .tooltip, 
+.button2 .tooltip, 
+.upload-cont .tooltip,
+.notify-cont .tooltip
+{
+  font-family: Roboto, Arial;
+  position:absolute;
+  background-color: gray;
+  color: white;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 3px;
+  font-size: 11px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.button1 .tooltip{
+  bottom: -30px;
+  margin-left: -7px;
+}
+.button2 .tooltip{
+  bottom: -15px;
+  margin-left: -40px;
+}
+.upload-cont .tooltip,
+.notify-cont .tooltip{
+  bottom: -25px;
+  margin-right: -7px;
+}
+.button1:hover .tooltip, 
+.button2:hover .tooltip, 
+.upload-cont:hover .tooltip,
+.notify-cont:hover .tooltip{
+  opacity: 1;
+}
+.upload-cont:hover{
+  background-color: rgb(192, 192, 192);
+  border-radius: 35px;
+}
+.notify-cont:hover{
+  background-color: rgb(192, 192, 192);
+  border-radius: 25px;
+}
+.upload-cont, 
+.notify-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.upload-cont{
+  width: 30px;
+  padding-left: -8px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.notify-cont{
+  width: 25px;
+  padding-left: -12px;
+  padding-right: 7.5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.searchimg{
+  height: 23px;
+  margin-bottom: 3px;
+}
+.button2{
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+.voice{
+  height: 23px;
+  margin-left: -3px;
+  margin-top: 1px;
+}
+.right-section{
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.upload{
+  height: 25px;
+  margin-right: -8px;
+}
+.notify{
+  height: 25px;
+  margin-right: -9px;
+}
+.profile{
+  height: 25px;
+  border-radius: 12px;
+  margin-right: 19px;
+}
